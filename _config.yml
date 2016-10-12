@@ -27,3 +27,4 @@ name: Krishna's site
 # Build settings
 markdown: kramdown
 theme: minima
+permalink: /blog/:year/:month/:day/:title
