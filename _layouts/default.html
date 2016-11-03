@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>{{ page.title }}</title>
-<!-- link to main stylesheet -->
-<link rel="stylesheet" type="text/css" href="/css/main.css">
-</head>
-<body>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/cv">CV</a></li>
-        <li><a href="/blog">Blog</a></li>
-    </ul>
-</nav>
-<div class="container">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+      <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold|Crimson+Text|Monsterrat|Roboto\Scada" rel="stylesheet" type="text/css">
 
-{{ content }}
+  </head>
+  <body>
+    <nav class = "navbar navbar-inverse navbar-fixed-top">
+      <div class = "container">
+        <div id = "navbar" class = "collapse navbar-collapse">
+          <ul class = "nav navbar-nav">
+            <li class = "active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/doc/CollegeResume.pdf">CV</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</div><!-- /.container -->
-<footer>
-    <ul>
+    <div class="container">
+    {{ content }}
+    </div><!-- /.container -->
+
+    <footer>
+      <ul>
         <li><a href="mailto:{{ site.email }}">email</a></li>
         <li><a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></li>
-</ul>
-</footer>
-</body>
+      </ul>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>
 
